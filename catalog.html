@@ -12,7 +12,7 @@
     <header>
       <div class="header-container">
           <nav class="site-navigation">
-              <a class="logo"><img src="img/logo.svg" width="140" height="71" alt="Логотип сайта Седона"></a>
+              <a href="index.html" class="logo"><img src="img/logo.svg" width="140" height="71" alt="Логотип сайта Седона"></a>
       <ul class="menu-nav reset-list">
         <li><a href="information.html">Информация</a></li>
         <li><a href="content.html">Фото и видео</a></li>
@@ -28,8 +28,8 @@
         <section class="filter">
           <div class="filter-container">
       <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-              <legend>Инфраструктура:</legend>
+          <fieldset class="fieldset-container">
+              <legend class="legend-container">Инфраструктура:</legend>
                   <ul class="filters-producers-list reset-list">
                       <li class="filters-producers-item">
                           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" id="pool" checked>
@@ -45,8 +45,8 @@
                       </li>
                     </ul>
                   </fieldset>
-                <fieldset>
-                    <legend>Тип жилья:</legend>
+                <fieldset class="fieldset-container-second">
+                    <legend class="legend-container">Тип жилья:</legend>
                     <ul class="filters-producers-list reset-list">
                       <li class="filters-producers-item">
                           <input class="filter-input filter-input-checkbox" type="checkbox" name="living-room" id="inn" checked>
@@ -62,12 +62,14 @@
                       </li>
                   </ul>
           </fieldset>
-          <div class="test">
+          <div class="range-container">
           <fieldset class="filter-price">
-            <legend>Стоимость в сутки (Р):</legend>
+            <legend class="legend-container-range">Стоимость в сутки (Р):</legend>
             <div class="filter-range">
-              <label class="filter-min">От <input type="text" value="0"></label>
-              <label class="hotel-max">До <input type="text" value="3000"></label>
+
+          <!--  -->
+              <label class="price-from">От<input  class="range-value" type="text" value=" 0"></label>
+              <label class="price-to">До<input  class="range-value" type="text" value="3000"></label>
             </div>
 
             <div class="filter-scale">
@@ -83,18 +85,17 @@
         </section>
       <section class="catalog">
           <h2 class="visually-hidden">Сортировка отелей</h2>
-          <div class="catalog-find">
-          <span>Найдено:3</span>
-          <span class="sorter-title">сортировка:</span>
-        </div>
+          <ul class="catalog-find reset-list">
+            <li>Найдено:3</li>
           <ul class="catalog-sorter reset-list">
+              <li class="sorter-title">сортировка:</li>
               <li><a class="catalog-sorter-link active-sorter" href="#">по цене</a></li>
               <li><a class="catalog-sorter-link inactive-sorter" href="#">по типу</a></li>
-              <li><a class="catalog-sorter-link inactive-sorter" href="#">по функционалу</a></li>
+              <li><a class="catalog-sorter-link inactive-sorter" href="#">по рейтингу</a></li>
             </ul>
             <ul class="sort-navigation reset-list">
-              <li><a href="#" class="triangle-up triangle-up-active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
-              <li><a href="#" class="triangle-down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
+              <li><a href="#" class="triangle-up "><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
+              <li><a href="#" class="triangle-down triangle-down-active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
             </ul>
       </section>
 
@@ -105,7 +106,7 @@
             <h3 class="hotel-link">
               <a href="#">Amara Resort & Spa</a>
             </h3>
-            <ul class="make-order">
+            <ul class="make-order amara">
               <li>
                 <p>Гостинница</p>
                 <a href ="#" class="info">Подронее</a>
@@ -116,7 +117,7 @@
               </li>
             </ul>
             <ul class="rates reset-list">
-                <li><div class="stars">
+                <li class="stars"><div>
                   <img src="img/star.svg">
                   <img src="img/star.svg">
                   <img src="img/star.svg">
@@ -131,7 +132,7 @@
             <h3 class="hotel-link">
               <a href="#">Desert Quail Inn</a>
             </h3>
-            <ul class="make-order-2">
+            <ul class="make-order desert">
               <li>
                 <p>Мотель</p>
                 <a href ="#" class="info">Подронее</a>
@@ -142,7 +143,7 @@
                 </li>
               </ul>
               <ul class="rates reset-list">
-                <li><div class="stars">
+                <li  class="stars"><div >
                   <img src="img/star.svg">
                   <img src="img/star.svg">
                   <img src="img/star.svg">
@@ -156,7 +157,7 @@
             <h3 class="hotel-link">
               <a href="#">Villas at Poco Diablo</a>
             </h3>
-            <ul class="make-order-3">
+            <ul class="make-order villas">
               <li>
                 <p>Апартаменты</p>
                 <a href ="#" class="info">Подронее</a>
@@ -167,7 +168,7 @@
                 </li>
                 </ul>
                 <ul class="rates reset-list">
-                <li><div class="stars">
+                <li class="stars"><div>
                   <img src="img/star.svg">
                   <img src="img/star.svg">
                 </div></li>
