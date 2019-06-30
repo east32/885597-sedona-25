@@ -14,11 +14,11 @@
           <nav class="site-navigation">
               <a href="index.html" class="logo"><img src="img/logo.svg" width="140" height="71" alt="Логотип сайта Седона"></a>
       <ul class="menu-nav reset-list">
-        <li><a href="index.html">Информация</a></li>
-        <li><a href="content.html">Фото и видео</a></li>
-        <li></li>
-        <li><a href="state-map.html">Карта штата</a></li>
-        <li><a href="catalog.html" class="menu-item-current">Гостиницы</a></li>
+        <li class="nav-item left-part"><a href="information.html">Информация</a></li>
+        <li class="nav-item left-part"><a href="content.html">Фото и видео</a></li>
+        <li class="nav-item"></li>
+        <li class="nav-item right-part"><a href="state-map.html">Карта штата</a></li>
+        <li class="nav-item right-part" class="menu-item-current"><a href="catalog.html">Гостиницы</a></li>
       </ul>
            </nav>
       </div>
@@ -58,7 +58,7 @@
                       </li>
                       <li class="filters-producers-item">
                           <input class="filter-input filter-input-checkbox" type="checkbox" name="apartment" id="apartment" checked>
-                          <label for="apartment">Аппартаменты</label>
+                          <label for="apartment">Апартаменты</label>
                       </li>
                   </ul>
           </fieldset>
@@ -68,8 +68,8 @@
             <div class="filter-range">
 
           <!--  -->
-              <label class="price-from">От<input  class="range-value" type="text" value=" 0"></label>
-              <label class="price-to">До<input  class="range-value" type="text" value="3000"></label>
+              <label class="price-from">От<input  class="range-value from" type="text" value=" 0"></label>
+              <label class="price-to">До<input  class="range-value to" type="text" value="3000"></label>
             </div>
 
             <div class="filter-scale">
@@ -86,7 +86,7 @@
       <section class="catalog">
           <h2 class="visually-hidden">Сортировка отелей</h2>
           <ul class="catalog-find reset-list">
-            <li>Найдено:3</li>
+            <li>Найдено: 3</li>
           </ul>
           <ul class="catalog-sorter reset-list">
               <li class="sorter-title">сортировка:</li>
@@ -95,15 +95,15 @@
               <li><a class="catalog-sorter-link inactive-sorter" href="#">по рейтингу</a></li>
             </ul>
             <ul class="sort-navigation reset-list">
-              <li><a href="#" class="triangle-up "><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
-              <li><a href="#" class="triangle-down triangle-down-active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
+              <li><a href="#" class="triangle-up" aria-label="Сортировка по возростанию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
+              <li><a href="#" class="triangle-down triangle-down-active" aria-label="Сортировка по убыванию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
             </ul>
       </section>
 
       <section class="hotels">
         <ul class="hotel-list reset-list">
           <li class="hotel-item">
-            <a href="#"><img src="img/amara-logo.png" width="135" height="90" alt="Amara Resort & Spa"></a>
+            <a href="#"><img src="img/amara-logo.jpg" width="135" height="90" alt="Amara Resort & Spa"></a>
             <div class="hotel-container">
             <div>
             <h3 class="hotel-link">
@@ -111,8 +111,8 @@
             </h3>
             <ul class="make-order reset-list">
               <li>
-                <p class="price-name">Гостинница</p>
-                <a href ="#" class="info">Подронее</a>
+                <p class="price-name">Гостиница</p>
+                <a href ="#" class="info">Подробнее</a>
               </li>
               <li>
                 <p class="price-name">от 4000 Р.</p>
@@ -133,7 +133,7 @@
           </li>
 
           <li class="hotel-item">
-            <a href="#"><img src="img/desert-logo.png"  width="135" height="90" alt="Desert Quail Inn"></a>
+            <a href="#"><img src="img/desert-logo.jpg"  width="135" height="90" alt="Desert Quail Inn"></a>
             <div class="hotel-container">
             <div>
             <h3 class="hotel-link">
@@ -142,7 +142,7 @@
             <ul class="make-order reset-list">
               <li>
                 <p class="price-name">Мотель</p>
-                <a href ="#" class="info">Подронее</a>
+                <a href ="#" class="info">Подробнее</a>
               </li>
               <li>
                 <p class="price-name">от 3000 Р.</p>
@@ -162,7 +162,7 @@
             </li>
 
           <li class="hotel-item">
-            <a href="#"><img src="img/villas-logo.png" width="135" height="90" alt="Villas at Poco Diablo"></a>
+            <a href="#"><img src="img/villas-logo.jpg" width="135" height="90" alt="Villas at Poco Diablo"></a>
             <div class="hotel-container">
             <div>
             <h3 class="hotel-link">
@@ -171,7 +171,7 @@
             <ul class="make-order reset-list">
               <li>
                 <p class="price-name">Апартаменты</p>
-                <a href ="#" class="info">Подронее</a>
+                <a href ="#" class="info">Подробнее</a>
                 </li>
               <li>
                 <p class="price-name">от 2000 Р.</p>
